@@ -15,4 +15,17 @@ describe Book do
   it "throws ArgumentError when passed < 3 arguments" do
     expect(lambda{ Book.new("Title", "Author") }).to raise_error(ArgumentError)
   end
+
+  it "returns the correct title" do
+    expect(@book.title).to eq("Title")
+  end
+
+  it "returns the correct title" do
+    expect(@book.author).to eq("Author")
+  end
+
+  it "returns the correct title" do
+    expect(@book.category).to eq(:category)
+  end
+
 end
